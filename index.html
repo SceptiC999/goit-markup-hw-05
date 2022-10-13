@@ -66,7 +66,18 @@
           Ефективні рішення для <br />
           вашого бізнесу
         </h1>
-        <button type="button" class="general-button">Замовити послугу</button>
+        <button data-modal-open class="general-button">Замовити послугу</button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <!-- <h3>Залиште свої дані, ми вам передзвонимо</h3> -->
+                <!-- <p></p> -->
+              <button data-modal-close class="general-button-close">
+                <svg class="general-icon">
+                  <use class="" href="./img/icons.svg#close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
       </section>
       <!--Переваги-->
       <section class="features section">
@@ -75,7 +86,7 @@
           <ul class="features-list list">
             <li class="features-list-item">
               <div class="features-img" >
-              <svg  class="features-icon">
+              <svg class="features-icon">
                 <use href="./img/icons.svg#antenna"></use>
               </svg>
             </div>
@@ -131,17 +142,23 @@
             <li class="field-employment-item">
               <a class="field-employment-link" href=""
                 ><img class="img" src="img/img.jpg" alt="desktop" width="370"
-              /></a>
+              /> <div class="field-employment-trantitle">
+                  <p class="field-employment-text">Десктопні додатки</p>
+              </div></a>
             </li>
             <li class="field-employment-item">
               <a class="field-employment-link" href=""
                 ><img class="img" src="img/img1.jpg" alt="mobile" width="370"
-              /></a>
+              /><div class="field-employment-trantitle">
+                <p class="field-employment-text">Мобільні додатки</p>
+            </div></a>
             </li>
             <li class="field-employment-item">
               <a class="field-employment-link" href=""
                 ><img class="img" src="img/img2.jpg" alt="tablet" width="370"
-              /></a>
+              /><div class="field-employment-trantitle">
+                <p class="field-employment-text">Дизайнерські рішення</p>
+            </div></a>
             </li>
           </ul>
         </div>
@@ -409,5 +426,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
